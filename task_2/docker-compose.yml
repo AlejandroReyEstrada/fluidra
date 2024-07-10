@@ -1,0 +1,7 @@
+services:
+  fluidra:
+    build: .
+    volumes:
+      - ./playwright-report:/test/playwright-report
+      - ./screenshoots:/test/screenshoots
+      - ./test-results:/test/test-results
