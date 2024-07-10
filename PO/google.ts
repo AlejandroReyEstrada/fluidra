@@ -21,7 +21,7 @@ export class GooglePage {
   }
 
   async readMoreIn(mainSite: string) {
-    await this.page.getByText(mainSite, { exact: true }).locator('visible=true').click();
+    await this.page.getByText(mainSite, { exact: true }).locator('visible=true').first().click();
   }
 
   async refuseAll() {
