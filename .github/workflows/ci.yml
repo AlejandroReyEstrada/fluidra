@@ -22,5 +22,8 @@ jobs:
       run: npm ci
       run: npx playwright install --with-deps
 
+    - name: Install browsers
+      run: npx playwright install --with-deps
+
     - name: Run Playwright tests
       run: npx bddgen && npx playwright test
