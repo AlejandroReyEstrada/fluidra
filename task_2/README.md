@@ -20,6 +20,7 @@ All tests are executed in the following environments:
 - [Requirements](#requirements)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Report](#report)
 
 ## Requirements
 
@@ -61,9 +62,17 @@ npx bddgen && npx playwright test --project=webkit
 npx bddgen && npx playwright test --project=mobile
 ```
 
--To run tests using Docker Compose:
+- To run tests using Docker Compose:
 
 ```bash
 docker compose build
 docker compose run fluidra
+```
+
+## Requirements
+
+- To show report, you can use the following command:
+
+```node
+npx playwright show-report
 ```
