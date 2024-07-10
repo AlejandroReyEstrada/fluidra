@@ -11,7 +11,7 @@ Given('A unlogged user search {string} in Google', async ({ page }, searchTerm) 
   wiki = new WikiPage(page);
 
   await google.goto();
-  await google.refuseAll();
+  // await google.refuseAll();
   await google.search(searchTerm);
 });
 
